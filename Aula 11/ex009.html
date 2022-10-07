@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Análise de Cidadania</title>
+</head>
+<body>
+    <h1>Análise de Cidadania</h1>
+    País de origem: <input type="text" name="txtnac" id="txtnac">
+    <input type="button" value="Analisar" onclick="analisar()">
+    <div id="res"></div>
+    <script>
+        var nac = window.document.getElementById('txtnac')
+        var res = window.document.querySelector('div#res')
+        function analisar() {
+            if (nac.value == 'Brasil') {   
+                res.innerHTML = `<p>Nascido em: ${nac.value} - <strong>Brasileiro</strong></p>`
+            } else {
+                res.innerHTML = `<p>Nascido em: ${nac.value} - <strong>Estrangeiro</strong></p>`
+            }
+        }
+    </script>
+</body>
+</html>
