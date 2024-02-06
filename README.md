@@ -1,2 +1,2 @@
 # scripts-js
- Exercícios do curso de JavaScript
+ Aulas práticas e exercícios do curso de JavaScript e ECMAScript para iniciantes oferecido pelo Curso em Vídeo.
